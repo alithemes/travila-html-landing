@@ -357,7 +357,7 @@
             }
         }
         &.sticky-bar.stick {
-            background-color: var(--bs-neutral-700);
+            background-color: var(--bs-neutral-1000);
         }
     }
 }
@@ -374,8 +374,7 @@
     &.stick {
         -webkit-animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
         animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
-        -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
-        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
+        box-shadow: 0;
         position: fixed;
         top: 0;
         width: 100%;
@@ -383,8 +382,7 @@
         left: 0;
         -webkit-transition: all 0.3s ease 0s;
         transition: all 0.3s ease 0s;
-        border-bottom: 1px solid var(--bs-neutral-100);
-        background: var(--bs-neutral-0);
+        border-bottom: 0;
         .main-header {
             padding: 0px;
         }

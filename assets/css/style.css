@@ -2982,6 +2982,11 @@ label {
   display: block;
   margin: auto;
   border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+.card-page-design .card-image:hover img {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
 }
 .card-page-design .card-info {
   display: flex;
@@ -3746,7 +3751,7 @@ label {
   background: url(../imgs/template/icons/arrow-lang.svg) no-repeat right center;
 }
 .header.header-fixed.sticky-bar.stick {
-  background-color: var(--bs-neutral-700);
+  background-color: var(--bs-neutral-1000);
 }
 
 .box-desc-menu {
@@ -3762,8 +3767,7 @@ label {
 .sticky-bar.stick {
   -webkit-animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
-  -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -3771,8 +3775,7 @@ label {
   left: 0;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  border-bottom: 1px solid var(--bs-neutral-100);
-  background: var(--bs-neutral-0);
+  border-bottom: 0;
 }
 .sticky-bar.stick .main-header {
   padding: 0px;
@@ -4538,7 +4541,7 @@ label {
 }
 
 .footer {
-  background-color: var(--bs-neutral-800);
+  background-color: var(--bs-neutral-1000);
   padding: 20px 0px 20px 0px;
 }
 

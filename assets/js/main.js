@@ -51,7 +51,6 @@
             $(".form-search").slideUp();
         }
     });
-
     // btn search
     $(".btn-search").on('click', function(e){
         e.preventDefault();
@@ -221,14 +220,13 @@
         var swiper_payment_items = new Swiper(this, {
             spaceBetween: 20,
             slidesPerView: 13,
-            slidesPerGroup: 2,
             loop: true,
             navigation: {
                 nextEl: ".swiper-button-next-logo-13",
                 prevEl: ".swiper-button-prev-logo-13"
             },
             autoplay: {
-                delay: 5000
+                delay: 1500
             },
             breakpoints: {
                 1199: {
@@ -255,7 +253,6 @@
             }
         });
     });
-
     $(".swiper-group-1").each(function () {
         var swiper_1_item = new Swiper(this, {
             slidesPerView: 1,
@@ -315,7 +312,6 @@
             }
         });
     });
-
     var swiper_center_4 = new Swiper('.swiper-group-center-4', {
         navigation: {
             nextEl: ".swiper-button-next-center-4",
@@ -329,7 +325,6 @@
         spaceBetween: 18,
         slideToClickedSlide: true
     });
-
     //Dropdown selected item
     $(".dropdown-menu li a").on("click", function (e) {
         e.preventDefault();
@@ -353,7 +348,6 @@
             fixedContentPos: false
         });
     }
-
     var msnry = null;
     if ($("#masonry").length > 0) {
         msnry = new Masonry("#masonry", {
@@ -374,7 +368,6 @@
         }
         msnry.layout();
     });
-
     /*------ Timer Countdown ----*/
     $("[data-countdown]").each(function () {
         var $this = $(this),
