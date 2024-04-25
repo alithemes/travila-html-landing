@@ -1838,7 +1838,7 @@ body {
 }
 .btn.btn-gray svg {
   stroke: var(--bs-neutral-1000);
-  margin-left: 13px;
+  margin-left: 4px;
 }
 .btn.btn-gray:hover {
   color: var(--bs-neutral-0) !important;
@@ -2972,7 +2972,7 @@ label {
   transition: all ease-in-out 0.3s;
 }
 .card-page-design .card-image {
-  padding: 23px;
+  padding: 22px 22px 0 22px;
   background: url(../imgs/page/landing/bg1.png) no-repeat center;
   background-size: cover;
   border-radius: 8px;
@@ -2981,11 +2981,12 @@ label {
 .card-page-design .card-image img {
   display: block;
   margin: auto;
-  border-radius: 4px;
+  border-radius: 6px 6px 0 0;
   transition: transform 0.3s ease;
+  margin-bottom: -10px;
 }
 .card-page-design .card-image:hover img {
-  transform: scale(1.08);
+  transform: translateY(-10px);
   transition: transform 0.3s ease;
 }
 .card-page-design .card-info {
@@ -3045,6 +3046,7 @@ label {
   padding: 28px;
   text-align: center;
   margin-bottom: 22px;
+  cursor: pointer;
 }
 .card-unlock .card-image {
   height: 54px;
