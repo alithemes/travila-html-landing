@@ -85,7 +85,6 @@
                 }
             }
         }
-
         .mobile-header-content-area {
             padding: 0px 30px 0px 30px;
             .mobile-menu-wrap {
@@ -487,7 +486,7 @@
     position: absolute;
     width: 42px;
     height: 42px;
-    background-color: var(--bs-neutral-100);
+    background-color: transparent;
     border-radius: 4px;
     cursor: pointer;
     -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -549,7 +548,7 @@
 }
 .burger-icon.burger-icon-white > span::before,
 .burger-icon.burger-icon-white > span::after {
-    background-color: var(--bs-neutral-1000);
+    background-color: var(--bs-neutral-0);
 }
 .mobile-search {
     form {
@@ -616,13 +615,11 @@
     margin: 15px 0;
     padding: 30px 0 20px 0;
     border-top: thin solid $border-color;
-
     .mobile-menu {
         columns: 2;
         -webkit-columns: 2;
         -moz-columns: 2;
     }
-
     h6 {
         font-weight: 600;
         font-size: 18px;

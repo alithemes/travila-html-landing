@@ -131,6 +131,10 @@
     .box-page-design-inner {
         background-size: 150px;
     }
+    .box-title-bestsell {
+        padding-right: 30px;
+        background-image: none;
+    }
 }
 @include media-breakpoint-down(md) {
     //max-width: 767.98px
@@ -158,6 +162,13 @@
     h1, .heading-1 {
         font-size: 44px;
         line-height: 56px;
+    }
+    .text-with-img {
+        font-size: 14px;
+    }
+    .text-lg, .text-lg-medium, .text-lg-bold {
+        font-size: 14px;
+        line-height: 1.2;
     }
 }
 @include media-breakpoint-down(sm) {

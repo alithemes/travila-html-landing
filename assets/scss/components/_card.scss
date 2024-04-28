@@ -43,6 +43,7 @@
         background-size: cover;
         border-radius: 8px;
         overflow: hidden;
+        position: relative;
         img {
             display: block;
             margin: auto;
@@ -55,6 +56,13 @@
                 transform: translateY(-10px);
                 transition: transform .3s ease;
             }
+        }
+        h6.coming {
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            left: 50%;
+            margin-left: -25%;
         }
     }
     .card-info {
