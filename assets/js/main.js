@@ -376,6 +376,37 @@
             $(this).html(event.strftime("" + '<span class="countdown-section"><span class="countdown-amount font-sm-bold lh-16">%D</span><span class="countdown-period lh-14 font-xs"> days </span></span>' + '<span class="countdown-section"><span class="countdown-amount font-sm-bold lh-16">%H</span><span class="countdown-period font-xs lh-14"> hours </span></span>' + '<span class="countdown-section"><span class="countdown-amount font-sm-bold lh-16">%M</span><span class="countdown-period font-xs lh-14"> mins </span></span>' + '<span class="countdown-section"><span class="countdown-amount font-sm-bold lh-16">%S</span><span class="countdown-period font-xs lh-14"> secs </span></span>'));
         });
     });
+    /*------ Text Type Countdown ----*/
+    var typeText = document.querySelector(".typeText")
+    var textToBeTypedArr = ["Travel Booking", "Hotel Booking", "Car Rent", "Ticket Booking", "Flight Booking", "Properties Rent"]
+    var index = 0, isAdding = true, textToBeTypedIndex = 0
+    function playAnim() {
+    setTimeout(function () {
+        typeText.innerText = textToBeTypedArr[textToBeTypedIndex].slice(0, index)
+        if (isAdding) {
+            if (index > textToBeTypedArr[textToBeTypedIndex].length) {
+                isAdding = false
+                typeText.classList.add("showAnim")
+                setTimeout(function () {
+                typeText.classList.remove("showAnim")
+                playAnim()
+                }, 500)
+                return
+            } else {
+                index++
+            }
+            } else {
+                if (index === 0) {
+                    isAdding = true
+                    textToBeTypedIndex = (textToBeTypedIndex + 1) % textToBeTypedArr.length
+                } else {
+                    index--
+                }
+            }
+            playAnim()
+        }, isAdding ? 120 : 60)
+    }
+    playAnim()
 })(jQuery);
 // Check billed
 function switchBilled() {

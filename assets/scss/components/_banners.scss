@@ -145,3 +145,16 @@
     -o-animation: hero-thumb-sm-2-animation 4s linear infinite alternate;
     animation: hero-thumb-sm-2-animation 4s linear infinite alternate;
 }
+.texttype {  
+    display: inline-flex; 
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.showAnim.typeText::after {
+    animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
