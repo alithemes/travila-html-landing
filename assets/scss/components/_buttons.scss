@@ -901,3 +901,18 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 /*End button Switch On Off*/
+.card-info-right {
+  .btn.btn-gray {
+    svg {
+      width: 0;
+      transition-duration: 0.3s;
+    }
+    &:hover {
+      svg {
+        width: 20px;
+        transition-duration: 0.3s;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
